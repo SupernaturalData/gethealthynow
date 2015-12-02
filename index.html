@@ -1,7 +1,7 @@
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -17,16 +17,30 @@
   font-family: 'IM Fell DW Pica', serif;
   font-size : 32px;
   }
-  #selector {
+  #selector1 {
+    display : inline;
+    margin-left : 10px;
   }
-  .class {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+  #FoodCheck {
+    font-family: 'Roboto', sans-serif;
+    margin-right : 0px;
+    margin-bottom : 5px;
+    display : inline;
+  }
+  #ManualCheck {
+    font-family: 'Roboto', sans-serif;
   }
   </style>
 <h1 id="title"> The Amazing Fitness Tracker </h1>
 <h3 id="eat"> What did you eat today?</h3>
-<p class="paras"> Check our wide list of foods</p>
-<button id="selector1"> Select </button>
-<p class="paras" > Or manually enter a food </p>
+<p id="FoodCheck"> Check our wide list of foods</p>
+<button id="selector1" onclick="FoodList()"> Select </button>
+<p id="ManualCheck" > Or manually enter a food </p>
+
+<script>
+  function FoodList() {
+    
+  }
+  </script>
 </body>
 </html>
