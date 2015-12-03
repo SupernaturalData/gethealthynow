@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -20,7 +21,17 @@
   #selector1 {
     display : inline;
     margin-left : 10px;
-  }
+    background-color: green;
+    border: 3px outset gray;
+    color : white;
+ }
+      #selector2 {
+    display : inline;
+    margin-left : 10px;
+    background-color: green;
+    border: 3px outset gray;
+    color : white;
+ }
   #FoodCheck {
     font-family: 'Roboto', sans-serif;
     margin-right : 0px;
@@ -29,17 +40,35 @@
   }
   #ManualCheck {
     font-family: 'Roboto', sans-serif;
+        margin-right : 0px;
+    margin-bottom : 5px;
+    border : 1px solid green
   }
   body {
-    background-color: gray;
+    background-image : url("http://www.reclaim-your-health.com/wp-content/uploads/2014/12/vegetables2.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
   }
+    #hider {
+      height : 100%;
+      width : 100%;
+      background-image : url("http://www.icehockeychallengecup.co.uk/communities/4/004/013/076/544//images/4619863281.png");
+      position : absolute;
+      margin-left : -10px;
+      margin-right :0px ;
+      margin-top : -8px ;
+      margin-bottom : 0px;
+    }
   </style>
+  <div id="hider">
+   
+  </div>
 <h1 id="title"> The Amazing Fitness Tracker </h1>
 <h3 id="eat"> What did you eat today?</h3>
 <p id="FoodCheck"> Check our wide list of foods</p>
-<button id="selector1" onclick="FoodList()"> Select </button>
+<button id="selector1" onclick="FoodList()" type="button"> Select </button>
 <p id="ManualCheck" > Or manually enter a food </p>
-
+<button id="selector2" onclick="FoodList()" type="button"> Select </button>
 <script>
   function FoodList() {
     
