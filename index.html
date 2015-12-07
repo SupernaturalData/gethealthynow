@@ -165,6 +165,7 @@
           z-index :2;
           left : 25%;
           top : 25%;
+          visibility : hidden;
       }
 </head>
 <body>
@@ -185,14 +186,17 @@
   </div>
   <div id="manualdivs">
 <p id="ManualCheck" > Or manually enter a food </p>
-<button id="selector2" onclick="FoodList()" type="button"> Select </button>
+<button id="selector2" type="button"> Select </button>
   </div>
   <div id="foodthings">
       
   </div>
 <script>
   function FoodList() {
-    
+    var grey = document.getElementById("hider");
+    var food = document.getElementById("foodthings");
+    grey.style.visibility = "visible";
+    food.style.visibility = "visible";
   }
   </script>
 </body>
