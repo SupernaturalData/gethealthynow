@@ -1,4 +1,0 @@
-$ cat .gitmodules
-[submodule "about"]
-    path = about
-    url = git://git.supernaturaldata.org/about
