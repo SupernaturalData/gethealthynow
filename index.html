@@ -175,16 +175,14 @@
       }
       
       #pizzahutpeppizza14img {
-      width : 20%;
+      width : 100%;
       height : 100%;
       }
       
       #pizzahutpeppizza14desc {
-      width : 50%;
-      height : 20%;
-      display : inline;
+      width : 100%;
+      height : 100%;
       font-family: 'Roboto', sans-serif;
-      border : 1px solid blue;
       margin-top : 0px;
       margin-bottom : 0px;
       text-align : center;
@@ -193,9 +191,19 @@
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    margin-left : 10%;
-    
-    
+    margin-left : 0%;
+    display : inline-block;
+      }
+        #pizzahutpeppizza14imgdiv {
+      width : 20%;
+      height : 100%;
+        }
+      #pizzahutpeppizza14descdiv {
+      width : 100%;
+      height : 100%;
+      border : 1px solid green;
+      display : inline-block;
+      top : -10%;
       }
 </head>
 <body>
@@ -220,8 +228,12 @@
   </div>
   <div id="foodthings">
     <div id="pizzahutpeppizza14">
+      <div id="pizzahutpeppizza14imgdiv">
         <img src="http://orderpizzaplace.com/SiteFiles/124/Menu/PepperoniPizza350.png" id="pizzahutpeppizza14img"/>
-       <p id = "pizzahutpeppizza14desc"> Hand Tossed 14" pepperoni pizza </p>
+    </div>
+      <div id="pizzahutpeppizza14descdiv">
+       <p id="pizzahutpeppizza14desc"> Hand Tossed 14" pepperoni pizza </p>
+    </div>
     </div>
   </div>
 <script>
