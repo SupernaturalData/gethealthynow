@@ -545,6 +545,42 @@
       #cabbagebutton:hover {
         background-image : url("https://openmerchantaccount.com/img2/gradient8.png");
       }
+      #manualfoodform {
+        width : 50%;
+        height: 50%;
+        position : absolute;
+        background-color : rgb(255,255,255);
+        left : 25%;
+        top : 25%;
+        visibility : hidden;
+      }
+      #manualtitle {
+        text-align : center;
+        margin-top : 0px;
+        font-family: 'Roboto', sans-serif;
+        color : rgb(50,50,50);
+      }
+      #manualenter {
+        margin : 0px 0px 0px 2px;
+      }
+      #foodnamemanual {
+        margin : 3px 0px 3px 0px;
+      }
+      #caloriesmanual {
+        margin : 3px 0px 3px 0px;
+      }
+      #fatmanual {
+        margin : 3px 0px 3px 0px;
+      }
+      #sodiummanual {
+        margin : 3px 0px 3px 0px;
+      }
+      #carbsmanual {
+        margin : 3px 0px 3px 0px;
+      }
+      #submitbuttonmanual {
+        margin : 3px 0px 3px 0px;
+      }
 </head>
 <body>
   </style>
@@ -564,7 +600,7 @@
   </div>
   <div id="manualdivs">
 <p id="ManualCheck" > Or manually enter a food </p>
-<button id="selector2" type="button"> Select </button>
+<button id="selector2" type="button" onclick="manualFoodChecker()"> Select </button>
   </div>
       <div id="cancelfoodthings">
       <button type="button" id="cancelfoodthingsbutton" onclick="cancelButtonClick()"> Cancel </button>
@@ -648,6 +684,30 @@
         </div>
     </div>
   </div>
+  <div id="manualfooddiv">
+    <div id="manualfoodform">
+            <h3 id="manualtitle"> Manually Enter A Food </h3>
+      <form id="manualenter">
+        Food Name : <br>
+        <input type = "text" name="foodname" id="foodnamemanual">
+        <br>
+        Calories : <br>
+        <input type = "number" name="calories" id="caloriesmanual"> 
+        calories
+        <br>
+        Fat : <br>
+        <input type = "number" name="fat" id="fatmanual"> grams
+        <br>
+        Sodium : <br>
+        <input type = "number" name="sodium" id="sodiummanual"> milligrams
+        <br>
+        Carbs : <br>
+        <input type="number" name="carbs" id="carbsmanual"> grams
+        <br>
+        <input type="submit" value="submit" id="submitbuttonmanual">
+      </form>
+    </div>
+  </div>
 <script>
   function FoodList() {
     var grey = document.getElementById("hider");
@@ -667,6 +727,12 @@
   }
   function aboutButtonLink() {
     window.location.href("http://supernaturaldata.github.io/gethealthynow/about");
+  }
+  function manualFoodChecker() {
+        var grey = document.getElementById("hider");
+        var food = document.getElementById("manualfoodform");
+    grey.style.visibility = "visible";
+    food.style.visibility = "visible";
   }
   </script>
 </body>
