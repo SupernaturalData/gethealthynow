@@ -556,10 +556,10 @@
    </div>
   <h1 id="title"> The Amazing Fitness Tracker </h1>
   <ul id="topbar">
-    <button id="home"> Home </button>
-    <button id="about"> About </button>
-    <button id="contact"> Contact</button>
-    <button id="login"> Log in</button>
+    <button id="home" type="button"> Home </button>
+    <button id="about" type="button" onclick="aboutButtonLink()"> About </button>
+    <button id="contact" type="buton"> Contact</button>
+    <button id="login" type="button"> Log in</button>
   </ul>
 <h3 id="eat"> What did you eat today?</h3>
 <div id="fooddivs">
@@ -668,6 +668,9 @@
     grey.style.visibility = "hidden";
     food.style.visibility = "hidden";
     cancel.style.visibility = "hidden";
+  }
+  function aboutButtonLink() {
+    window.location.replace("http://supernaturaldata.github.io/gethealthynow/about");
   }
   </script>
 </body>
