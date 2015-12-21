@@ -562,24 +562,45 @@
       }
       #manualenter {
         margin : 0px 0px 0px 2px;
+        font-family: 'Roboto', sans-serif;
       }
       #foodnamemanual {
         margin : 3px 0px 3px 0px;
+        font-family: 'Roboto', sans-serif;
       }
       #caloriesmanual {
         margin : 3px 0px 3px 0px;
+        font-family: 'Roboto', sans-serif;
       }
       #fatmanual {
         margin : 3px 0px 3px 0px;
+        font-family: 'Roboto', sans-serif;
       }
       #sodiummanual {
         margin : 3px 0px 3px 0px;
+        font-family: 'Roboto', sans-serif;
       }
       #carbsmanual {
         margin : 3px 0px 3px 0px;
+       font-family: 'Roboto', sans-serif;
       }
       #submitbuttonmanual {
         margin : 3px 0px 3px 0px;
+        font-family: 'Roboto', sans-serif;
+      }
+            #cancelmanualbutton {
+        width : 10%;
+        height : 5%;
+        position : absolute;
+        top : 75%;
+        left : 25%;
+        background-image : url("https://openmerchantaccount.com/img2/gradient9.png");
+              font-family: 'Roboto', sans-serif;
+        visibility : hidden;
+        border : 3px outset rgb(75,75,75);
+      }
+            #cancelmanualbutton:hover {
+        background-image : url("https://openmerchantaccount.com/img2/gradient10.png");
       }
 </head>
 <body>
@@ -684,6 +705,9 @@
         </div>
     </div>
   </div>
+        <div id="cancelmanual">
+      <button type="button" id="cancelmanualbutton" onclick="cancelButton2Click()"> Cancel </button>
+    </div>
   <div id="manualfooddiv">
     <div id="manualfoodform">
             <h3 id="manualtitle"> Manually Enter A Food </h3>
@@ -731,8 +755,18 @@
   function manualFoodChecker() {
         var grey = document.getElementById("hider");
         var food = document.getElementById("manualfoodform");
+        var cancel = document.getElementById("cancelmanualbutton");
     grey.style.visibility = "visible";
     food.style.visibility = "visible";
+    cancel.style.visibility = "visible";
+  }
+  function cancelButton2Click() {
+        var grey = document.getElementById("hider");
+    var food = document.getElementById("manualfoodform");
+    var cancel = document.getElementById("cancelmanualbutton");
+    grey.style.visibility = "hidden";
+    food.style.visibility = "hidden";
+    cancel.style.visibility = "hidden";
   }
   </script>
 </body>
