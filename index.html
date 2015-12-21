@@ -571,7 +571,7 @@
 <button id="selector2" type="button"> Select </button>
   </div>
       <div id="cancelfoodthings">
-      <button type="button" id="cancelfoodthingsbutton"> Cancel </button>
+      <button type="button" id="cancelfoodthingsbutton" onclick="cancelButtonClick()"> Cancel </button>
     </div>
   <div id="foodthings">
     <div id="apple">
@@ -660,6 +660,14 @@
     grey.style.visibility = "visible";
     food.style.visibility = "visible";
     cancel.style.visibility = "visible";
+  }
+  function cancelButtonClick() {
+    var grey = document.getElementById("hider");
+    var food = document.getElementById("foodthings");
+    var cancel = document.getElementById("cancelfoodthingsbutton");
+    grey.style.visibility = "hidden";
+    food.style.visibility = "hidden";
+    cancel.style.visibility = "hidden";
   }
   </script>
 </body>
