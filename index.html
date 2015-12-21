@@ -1,4 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
+</html><!doctype html>
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -20,14 +29,14 @@
   font-size : 32px;
   }
   #selector1 {
-    margin-left : 10px;
+    margin-left : 4px;
     background-color: green;
     border: 3px outset gray;
     color : white;
     display : inline;
  }
       #selector2 {
-    margin-left : 11px;
+    margin-left : 5px;
     margin-top : 15px;
     background-color: green;
     border: 3px outset gray;
@@ -181,32 +190,44 @@
       }
       
       #pizzahutpeppizza14desc {
-      width : 100%;
-      height : 100%;
+        width : 100%;
       font-family: 'Roboto', sans-serif;
       margin-top : 0px;
       margin-bottom : 0px;
       text-align : center;
-      vertical-align : text-bottom;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     margin-left : 0%;
-    display : inline-block;
+    display : table-cell;
+        position : initial;
+        top : 35%;
+        vertical-align : middle;
       }
         #pizzahutpeppizza14imgdiv {
       width : 20%;
       height : 100%;
         }
-      #pizzahutpeppizza14desc {
-      width : 80%;
+      #pizzahutpeppizza14descdiv {
+      width : 60%;
       height : 20%;
       top : 0%;
       left : 20%;
-      border : 1px solid green;
       position : absolute;
-      vertical-align : middle;
+        display : table;
+      }
+      #pizzahutpeppizza14button {
+        position : absolute;
+        top : 0%;
+        left : 80%;
+          width : 20%;
+        height : 20%;
+        background-image : url("https://openmerchantaccount.com/img2/gradient7.png");
+        border : 3px inset grey;
+      }
+      #pizzahutpeppizza14button:hover {
+        background-image : url("https://openmerchantaccount.com/img2/gradient8.png");
       }
 </head>
 <body>
@@ -235,8 +256,11 @@
         <img src="http://orderpizzaplace.com/SiteFiles/124/Menu/PepperoniPizza350.png" id="pizzahutpeppizza14img"/>
     </div>
       <div id="pizzahutpeppizza14descdiv">
-       <p id="pizzahutpeppizza14desc"> Hand Tossed 14" pepperoni pizza </p>
+   <p id="pizzahutpeppizza14desc">Hand Tossed 14" pepperoni pizza</p>
     </div>
+      <div id="pizzahutpeppizza14buttondiv">
+        <button type="button" id="pizzahutpeppizza14button">Select</button>
+        </div>
     </div>
   </div>
 <script>
